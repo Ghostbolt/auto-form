@@ -1,1 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SwiftFill – Profiles</title>
+  styles.css
+</head>
+<body>
+  <h1>SwiftFill – Profiles</h1>
+  <p>Create and manage profiles. (Optional) set a password to encrypt data locally.</p>
 
+  <label>Active Profile:
+    <select id="profileSelect"></select>
+  </label>
+  <button id="newProfileBtn">New</button>
+  <button id="deleteProfileBtn">Delete</button>
+
+  <details open>
+    <summary>Personal Info</summary>
+    <div class="grid">
+      <label>First Name <input id="firstName" /></label>
+      <label>Last Name <input id="lastName" /></label>
+      <label>Full Name <input id="fullName" placeholder="If provided, overrides First/Last where needed" /></label>
+      <label>Email <input id="email" type="email" /></label>
+      <label>Phone (+27...) <input id="phone" /></label>
+      <label>South African ID Number <input id="idNumberZA" /></label>
+      <label>Date of Birth <input id="dob" type="date" /></label>
+      <label>Nationality <input id="nationality" /></label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Address</summary>
+    <div class="grid">
+      <label>Address Line 1 <input id="address1" /></label>
+      <label>Address Line 2 <input id="address2" /></label>
+      <label>City/Town <input id="city" /></label>
+      <label>Province <input id="province" /></label>
+      <label>Postal Code <input id="postalCode" /></label>
+      <label>Country <input id="country" value="South Africa" /></label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Links & Summary</summary>
+    <div class="grid">
+      <label>LinkedIn URL <input id="linkedin" /></label>
+      <label>GitHub URL <input id="github" /></label>
+      <label>Website/Portfolio <input id="website" /></label>
+      <label>Professional Summary <textarea id="summary"></textarea></label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Education & Experience (free text for MVP)</summary>
+    <div class="grid">
+      <label>School/Institution <input id="school" /></label>
+      <label>Degree/Qualification <input id="degree" /></label>
+      <label>Experience (summary) <textarea id="experience"></textarea></label>
+      <label>Cover Letter (default) <textarea id="coverLetter"></textarea></label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Security (Optional)</summary>
+    <div class="grid">
+      <label>Encryption Password <input id="encryptionPassword" type="password" placeholder="Set to encrypt at rest" /></label>
+    </div>
+  </details>
+
+  <div class="actions">
+    <button id="saveBtn">Save</button>
+    <button id="exportBtn">Export JSON</button>
+    <input type="file" id="importFile" accept="application/json" />
+  </div>
+
+  options.js</script>
+</body>
+</html>
